@@ -1,0 +1,559 @@
+@charset "UTF-8";
+
+/*color guide:
+#485655 dark gray
+#bcbdc0 light gray
+#FFFFFF white
+*/
+
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+	margin: 0;
+	padding: 0;
+	border: none;
+	color: #485655;
+}
+a {
+	text-decoration: none;
+	color: #485655;
+}
+a:hover {
+	text-decoration: none;
+	color: #F90;
+}
+a:active {
+	text-decoration: none;
+	color: #F90;
+}
+
+@font-face {
+    font-family: "Sentinel-Book";
+    src: local("Sentinel-Book"), local("Sentinel-Book"), url("_fonts/Sentinel-Book.otf") format("truetype");}
+@font-face {
+    font-family: "Gotham-Bold";
+    src: local("Gotham-Bold"), local("Gotham-Bold"), url("_fonts/Gotham-Bold.otf") format("truetype");}
+@font-face {
+    font-family: "Gotham-Book";
+    src: local("Gotham-Book"), local("Gotham-Book"), url("_fonts/Gotham-Book.otf") format("truetype");}
+	
+/*html5 display rule*/
+article, aside, canvas, details, figcaptio n, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+
+body {
+	background: #FFFFFF;
+	height: 100%;
+	margin: 0px;
+}
+
+
+
+/* layout styles */
+#wrapper {
+	position: relative;
+	width: 955px;
+	margin: 0 auto;
+	padding: 10px 50px;
+	text-align:left;
+	background-position:50px 30px;
+	min-height: 100%;
+}
+#wrapper2 {
+	position: relative;
+	width: 955px;
+	height:300px;
+	margin: 0 auto;
+	padding-top:300px;
+	text-align:left;
+	min-height: 100%;
+}
+
+header#mainHeader {
+	height: 150px;
+	padding-top:15px;
+	overflow:auto;
+}
+
+
+/*-------------presentation styles---------------*/
+
+/*header styles*/
+header#mainHeader {
+	font-color: #485655;
+}
+
+header#mainHeader h1 {
+	width:228px;
+	z-index:1;
+	margin-top:20px;
+}
+
+header#mainHeader h15 {
+	position: absolute;
+	top:118px;
+	left: 364px;
+	width:458px;
+	z-index:1;
+}
+
+header#mainHeader h2 {
+	position: absolute;
+	top:97px;
+	left: 355px;
+	width:458px;
+	z-index:1;
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	font-size:9.5pt;
+	letter-spacing:1pt;
+	font-weight:bold;
+	font-color:#485655;
+	text-align:left;
+}
+
+
+header#mainHeader span{
+	color: #bcbdc0;
+}
+
+
+/*external link styles*/
+
+content#links h1 {
+	position: absolute;
+	left:800px;
+	top:47px;
+}
+content#links h2 {
+	position: absolute;
+	left:833px;
+	top:47px;
+}
+content#links h3 {
+	position: absolute;
+	left:867px;
+	top:46px;
+}
+content#links h4 {
+	position: absolute;
+	left:900px;
+	top:47px;
+}
+content#links h5 {
+	position: absolute;
+	left:800px;
+	top:78px;
+}
+content#links h6 {
+	position: absolute;
+	left:833px;
+	top:78px;
+}
+content#links h7 {
+	position: absolute;
+	left:867px;
+	top:78px;
+}
+content#links h8 {
+	position: absolute;
+	left:900px;
+	top:78px;
+}
+
+/*end*/
+
+content#main h1 {
+	position: absolute;
+	top:176px;
+	left:48px;
+	z-index:1;
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	font-size:9.5pt;
+	letter-spacing:1pt;
+	font-weight:bold;
+	font-color:#485655;
+	text-align:left;
+}
+
+content#main h15 {
+	position: absolute;
+	top:190px;
+	left:48px;
+	z-index:1;
+}
+
+content#main h12 {
+	position: absolute;
+	top:176px;
+	left:650px;
+	z-index:1;
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	font-size:9.5pt;
+	letter-spacing:1pt;
+	font-weight:bold;
+	font-color:#485655;
+	text-align:left;
+}
+
+content#main h2 {
+	position: absolute;
+	top:205px;
+	left:40px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:left;
+}
+
+content#main h25 {
+	position: absolute;
+	top:214px;
+	left:48px;
+	width:267px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:left;
+	line-height:16px;
+}
+
+content#main h3 {
+	position: absolute;
+	top:426px;
+	left:48px;
+	z-index:1;
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	font-size:9.5pt;
+	letter-spacing:1pt;
+	font-weight:bold;
+	font-color:#485655;
+	text-align:left;
+	width: 400px;
+}
+
+content#main h35 {
+	position: absolute;
+	top:440px;
+	left:48px;
+	z-index:1;
+}
+
+content#main h4 {
+	position: absolute;
+	top:456px;
+	left:48px;
+	width:267px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:left;
+	line-height:16px;
+	color: #999;
+}
+content#main h5 {
+	position: absolute;
+	top:478px;
+	left:48px;
+	width:267px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:left;
+	line-height:16px;
+	color: #485655;
+}
+
+content#resume h1 {
+	position: absolute;
+	top:176px;
+	left:364px;
+	z-index:1;
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	font-size:9.5pt;
+	letter-spacing:1pt;
+	font-weight:bold;
+	font-color:#485655;
+	text-align:left;
+}
+
+content#resume h15 {
+	position: absolute;
+	top:190px;
+	left:364px;
+	z-index:1;
+}
+
+
+
+content#resume span {
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	font-size:9.5pt;
+	letter-spacing:1pt;
+	font-weight:bold;
+	font-color:#485655;
+	text-align:left;
+}
+
+
+
+content#resume h2 {
+	position: absolute;
+	top:205px;
+	left:40px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:left;
+}
+
+content#resume h25 {
+	position: absolute;
+	top:214px;
+	left:364px;
+	width:267px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:left;
+	line-height:16px;
+}
+
+content#resume h25 span {
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	letter-spacing:1pt;
+}
+
+content#resume h515 {
+	position: absolute;
+	top:190px;
+	left:650px;
+	z-index:1;
+}
+
+
+
+content#resume h525 {
+	position: absolute;
+	top:214px;
+	left:650px;
+	width:280px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:left;
+	line-height:16px;
+}
+
+content#resume h525 span {
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	letter-spacing:1pt;
+}
+
+content #gallery span {
+	font-color: #bcbdc0;
+}
+
+content#gallery h1 {
+	position: absolute;
+	top:176px;
+	left: 366px;
+}
+
+content#gallery h2 {
+	position: absolute;
+	top:528px;
+	left:360px;
+	width:30px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:right;
+	line-height:16px;
+	height: 15px;
+	color: #485655;
+}
+
+content#gallery h3 {
+	position: absolute;
+	top:528px;
+	left:391px;
+	width:30px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:right;
+	line-height:16px;
+	height: 15px;
+	color: #485655;
+}
+
+content#gallery h4 {
+	position: absolute;
+	top:528px;
+	left:421px;
+	width:30px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:right;
+	line-height:16px;
+	height: 15px;
+	color: #485655;
+}
+
+content#gallery h5 {
+	position: absolute;
+	top:528px;
+	left:450px;
+	width:30px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:right;
+	line-height:16px;
+	height: 15px;
+	color: #485655;
+}
+
+content#gallery h6 {
+	position: absolute;
+	top:528px;
+	left:480px;
+	width:30px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:right;
+	line-height:16px;
+	height: 15px;
+	color: #485655;
+}
+
+content#gallery h7 {
+	position: absolute;
+	top:528px;
+	left:490px;
+	width:30px;
+	z-index:1;
+	font-family:"Sentinel", Georgia, Times, serif;
+	font-weight:normal;
+	font-size:9.5pt;
+	font-color:#485655;
+	text-align:right;
+	line-height:16px;
+	height: 15px;
+	color: #485655;
+}
+
+
+/*div styles*/
+div#contact span{
+	font-weight:bold;
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	line-height:20pt;
+}
+
+div#contact h1{
+	position: absolute;
+	left:155px;
+	top:86px;
+	font-family:"Sentinel-Book", Georgia, "Times New Roman", serif;
+	font-weight:normal;
+	font-size:10.5pt;
+	line-height:16pt;
+	color:#574109;
+	text-align:left;
+	z-index:1;
+}
+
+/*footer styles FIX-external link?*/
+/*#footer {
+	height: 250px;
+	width: 955px;
+	position: absolute;
+	float: center;
+}
+
+#footer15 {
+	height: 250px;
+	width: 955px;
+	position: absolute;
+}
+
+
+#footer h1{
+	position:absolute;
+	left: 310px;
+	top:35px;
+	font-family:"Sentinel-Book", Georgia, "Times New Roman", serif;
+	font-size:8pt;
+	line-height:15pt;
+	color: #485655;
+	font-weight:normal;
+	z-index:1000;
+	width: 354px;
+	height:125px;
+	text-align:left;
+}
+
+#footer span{
+	font-family:"Gotham-Book", Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+
+#footer h2{
+	position:absolute;
+	width:212px;
+	left:700px;
+	top:30px;
+}
+#footer h3{
+	position:absolute;
+	width:55px;
+	left:50px;
+	top:30px;
+}
+#footer h4{
+	position:absolute;
+	width:55px;
+	left:50px;
+	top:75px;
+}
+#footer h5{
+	position:absolute;
+	width:55px;
+	left:50px;
+	top:120px;
+}
+ 
+
+
+
+	
+
+
+	*/
