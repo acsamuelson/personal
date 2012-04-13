@@ -19,6 +19,7 @@ var makeElement = function(entry) {
   var blog = $(document.createElement('div'));
   blog.append(entry.content);
   $('a[rel=nofollow]', blog).css('display', 'none');
+  $('iframe', blog).remove();
   var container = $(document.createElement('div'));
   container.addClass('blogEntry');
   container.append(title, date, blog);
