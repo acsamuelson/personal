@@ -5,7 +5,6 @@ google.load('feeds', '1');
 var getEntries = function(url, callback) {
   var feed = new google.feeds.Feed(url);
   feed.load(function(result) {
-    console.log(result.feed);
     callback(result.feed.entries);
   });
 };
