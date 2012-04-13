@@ -30,8 +30,8 @@ var insertEntries = function(parent, entries) {
   jQuery.map(elements, function(element) { parent.appendChild(element); });
 };
 
-$(document).ready(function() {
+function insertBlog(elem) {
   var entries = getEntries(url, function(entries) { 
-    insertEntries(document.getElementById('blog'), entries);  
+    insertEntries(elem, entries);  
   });
-});
+}
