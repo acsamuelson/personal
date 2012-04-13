@@ -52,7 +52,7 @@ body {
 /* layout styles */
 #wrapper {
 	position: relative;
-	width: 955px;
+	width: 900px;
 	margin: 0 auto;
 	padding: 10px 50px;
 	text-align:left;
@@ -468,6 +468,52 @@ content#gallery h7 {
 	height: 15px;
 	color: #485655;
 }
+
+content#blog {
+	font-family: "Sentinel", Georgia, Times, serif;
+	font-size:9.5pt;
+	letter-spacing:1pt;
+	font-color:#485655;
+	text-align:left;
+	padding-bottom:30px;
+}
+
+content#blog h1 {
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	font-size:9.5pt;
+	text-transform:capitalize;
+	letter-spacing:1pt;
+	font-weight:bold;
+	font-color:#485655;
+	text-align:left;
+	text-transform:uppercase;
+	border-bottom:medium;
+	border-bottom-color:#CCC;
+	border-bottom-style:double;
+	padding-bottom:5px;
+}
+
+content#blog h2 {
+	font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+	font-size:9.5pt;
+	letter-spacing:1pt;
+	font-weight:bold;
+	font-color:#485655;
+	text-align:left;
+	padding-top:8px;
+	padding-bottom:13px;
+}
+
+content#blog {
+	width: 500px;
+	font-family: "Sentinel", Georgia, Times, serif;
+	font-size:9.5pt;
+	letter-spacing:1pt;
+	font-color:#485655;
+	text-align:left;
+	padding-bottom:30px;
+}
+
 
 
 /*div styles*/
