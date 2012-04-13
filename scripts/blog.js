@@ -10,15 +10,19 @@ var getEntries = function(url, callback) {
 };
 
 var makeElement = function(entry) {
-  var title = document.createElement('h2');
+  var title = document.createElement('h1');
   title.appendChild(
       document.createTextNode(entry.title));
-  var date = document.createElement('h3');
+  title.className = 'title';
+  var date = document.createElement('h2');
   date.appendChild(
       document.createTextNode(entry.publishedDate));
+  date.className = 'date';
   var blog = document.createElement('div');
   blog.innerHTML = entry.content;
+  blog.className = 'content';
   var container = document.createElement('div');
+  container.className = 'blogEntry';
   container.appendChild(title);
   container.appendChild(date);
   container.appendChild(blog);
