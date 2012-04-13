@@ -10,23 +10,19 @@ var getEntries = function(url, callback) {
 };
 
 var makeElement = function(entry) {
-  var title = document.createElement('h1');
-  title.appendChild(
-      document.createTextNode(entry.title));
-  title.className = 'title';
-  var date = document.createElement('h2');
-  date.appendChild(
-      document.createTextNode(entry.publishedDate));
-  date.className = 'date';
-  var blog = document.createElement('div');
-  blog.innerHTML = entry.content;
-  blog.className = 'content';
-  var container = document.createElement('div');
-  container.className = 'blogEntry';
-  container.appendChild(title);
-  container.appendChild(date);
-  container.appendChild(blog);
-  return container;
+  var title = $(document.createElement('h1'));
+  title.append(entry.title);
+  title.addClass('title');
+  var date = $(document.createElement('h2'));
+  date.append(entry.publishedDate);
+  date.addClass('date');
+  var blog = $(document.createElement('div'));
+  blog.append(entry.content);
+  $('a[rel=nofollow]', blog).css('display', 'none');
+  var container = $(document.createElement('div'));
+  container.addClass('blogEntry');
+  container.append(title, date, blog);
+  return container[0];
 };
 
 var insertEntries = function(parent, entries) {
@@ -35,7 +31,7 @@ var insertEntries = function(parent, entries) {
 };
 
 function insertBlog(elem) {
-  var entries = getEntries(url, function(entries) { 
-    insertEntries(elem, entries);  
+  var entries = getEntries(url, function(entries) {
+    insertEntries(elem, entries);
   });
 }
