@@ -22,12 +22,12 @@ var makeElement = function(entry) {
   var container = $(document.createElement('div'));
   container.addClass('blogEntry');
   container.append(title, date, blog);
-  return container[0];
+  return container;
 };
 
 var insertEntries = function(parent, entries) {
   var elements = jQuery.map(entries, makeElement);
-  jQuery.map(elements, function(element) { parent.appendChild(element); });
+  jQuery.map(elements, function(element) { $(parent).append(element); });
 };
 
 function insertBlog(elem) {
