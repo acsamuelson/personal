@@ -24,15 +24,8 @@ work that is fun, and doesn't take itself too seriously. I hail from Texas, now 
 <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/blog.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-          insertBlog(document.getElementById('blog'));
-      });
-    </script>
-
+<script type="text/javascript" src="scripts/scripts.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.6.1.min.js"></script>
 
 <script type="text/javascript">
 
@@ -58,7 +51,6 @@ function MM_swapImage() { //v3.0
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 </script>
-<link href="http://www.utexas.edu.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -125,11 +117,64 @@ function MM_swapImage() { //v3.0
 </content>
 <!--end external links-->
 
-<content id="blog"/>
 
-</content>
+<content id="gallery">
+<h1>
+<img src="_img/portfolio/invisible/facebook.png" id="imageHere" />
+</h1>
 
+<!--<h2 onClick="MM_swapImage('imageHere','','_img/portfolio/branding/1_tes/1.png',1)">
+1 <span> &nbsp;//&nbsp; </span>
+</h2>
 
+<h3 onClick="MM_swapImage('imageHere','','_img/portfolio/branding1_tes/2.png',1)">
+2  <span> &nbsp;//&nbsp; </span>
+</h3>
+
+<h4 onClick="MM_swapImage('imageHere','','_img/portfolio/branding/1_tes/3.png',1)">
+3 <span> &nbsp;//&nbsp; </span>
+</h4>
+
+<h5 onClick="MM_swapImage('imageHere','','_img/portfolio/branding/1_tes/4.png',1)">
+4 <span> &nbsp;//&nbsp; </span>
+</h5>
+
+<h6 onClick="MM_swapImage('imageHere','','_img/portfolio/branding/1_tes/5.png',1)">
+5 <span> &nbsp;//&nbsp; </span>
+</h6>
+
+<h7 onClick="MM_swapImage('imageHere','','_img/portfolio/branding/1_tes/6.png',1)">
+6
+</h7>-->
+ </content>
+ 
+</body>
+
+<!--footer script FIX-->
+<!--<div id="footer">
+<h1>
+<span>ANNE SAMUELSON</span> creative can take care of all your creative needs! I am an award winning designer. I specialize in graphic design, web development, 
+& illustration. My approach to design is simple & accessible. I aim to create work that is fun, and doesn't take itself too seriously. I hail from Texas, now I am completing my Masters in Communications Design at the Pratt Institute in New York City. I accept freelance clients, local & not. I truly love what I do & hope you do too!
+</h1>
+
+<h15>
+<img src="_img/static/footer.png" />
+</h15>
+
+<h2>
+<img src="_img/static/tagline.png" />
+</h2>
+
+<h3>
+<img src="_img/static/contact/contact_phone.png" />
+</h3>
+<h4>
+<img src="_img/static/contact/contact_mail.png" />
+</h4>
+<h5>
+<img src="_img/static/contact/contact_web.png" />
+</h5>
+</div>-->
 
 
 <!--spry script-->
@@ -139,6 +184,6 @@ var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenu
 var MenuBar3 = new Spry.Widget.MenuBar("MenuBar3", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 var MenuBar4 = new Spry.Widget.MenuBar("MenuBar4", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 </script>
-</body>
+
 </div>
 </html>

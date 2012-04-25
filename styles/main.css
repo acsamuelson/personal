@@ -537,24 +537,24 @@ div#contact h1{
 }
 
 /*footer styles FIX-external link?*/
-/*#footer {
+#footer {
 	height: 250px;
-	width: 955px;
+	width: 908px;
 	position: absolute;
-	float: center;
+	left:40px;
 }
 
 #footer15 {
 	height: 250px;
-	width: 955px;
+	width: 915px;
 	position: absolute;
 }
 
 
 #footer h1{
 	position:absolute;
-	left: 310px;
-	top:35px;
+	left: 290px;
+	top:32px;
 	font-family:"Sentinel-Book", Georgia, "Times New Roman", serif;
 	font-size:8pt;
 	line-height:15pt;
@@ -574,32 +574,25 @@ div#contact h1{
 #footer h2{
 	position:absolute;
 	width:212px;
-	left:700px;
-	top:30px;
+	left:674px;
+	top:27px;
 }
 #footer h3{
 	position:absolute;
 	width:55px;
-	left:50px;
+	left:40px;
 	top:30px;
 }
 #footer h4{
 	position:absolute;
 	width:55px;
-	left:50px;
+	left:40px;
 	top:75px;
 }
 #footer h5{
 	position:absolute;
 	width:55px;
-	left:50px;
+	left:40px;
 	top:120px;
 }
  
-
-
-
-	
-
-
-	*/
