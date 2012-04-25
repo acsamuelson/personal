@@ -15,6 +15,7 @@ var formatDate = function(date) {
   return $.datepicker.formatDate('MM dd, yy', new Date(date));
 }
 
+<<<<<<< HEAD
 var scaleImage = function(image, maxHeight, maxWidth) {
   removeImageSize(image);
   $(image).load(function() {
@@ -48,6 +49,8 @@ var removeImageSize = function(elem) {
 }
 
 
+=======
+>>>>>>> Fixed Blog CSS
 var makeElement = function(entry) {
   var title = $(document.createElement('h1'));
   title.append(entry.title);
@@ -56,7 +59,6 @@ var makeElement = function(entry) {
   date.append(formatDate(entry.publishedDate));
   date.addClass('date');
   var blog = $(document.createElement('div'));
-  blog.addClass('blogContent');
   blog.append(entry.content);
   $('a[rel=nofollow]', blog).css('display', 'none');
   $.map($('img', blog), function(image) {
