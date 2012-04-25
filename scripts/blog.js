@@ -9,12 +9,16 @@ var getEntries = function(url, callback) {
   });
 };
 
+var formatDate = function(date) {
+  return $.datepicker.formatDate('MM dd, yy', new Date(date));
+}
+
 var makeElement = function(entry) {
   var title = $(document.createElement('h1'));
   title.append(entry.title);
   title.addClass('title');
   var date = $(document.createElement('h2'));
-  date.append(entry.publishedDate);
+  date.append(formatDate(entry.publishedDate));
   date.addClass('date');
   var blog = $(document.createElement('div'));
   blog.append(entry.content);
